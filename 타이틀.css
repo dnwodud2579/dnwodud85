@@ -1,0 +1,154 @@
+#container {
+	width: 10000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#content {
+	width: 500px;
+	padding: 10px;
+	margin-right: 160px;
+	margin-left: 160px;
+}
+#leftnav {
+	float: left;
+	width: 140px;
+	height: 400px;
+	background-color: #ffffff;
+	padding: 10px;
+		
+}
+
+#leftnav ul{
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+	font-family: '돋움', Helvetica, sans-serif;
+	font-size: 30px;
+}
+
+#leftnav a{
+	display: block;
+	width: 130px;
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+	border-bottom-width: 1px;
+}
+
+#leftnav a:link, .navlist a:visited{
+color: #2F77F1;
+text-decoration: underline;
+font-weight: bold;
+}
+
+#leftnav a:visited{
+   color: #ffffff;
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+#leftnav a:hover{
+	text-decoration: none;
+	color: #0000ff;
+}
+
+#sidebar {
+	padding: 10px;
+	float: right;
+	width: 130px;
+	background-color: #30D9F4;
+	height: 390px;
+
+}
+
+#footer {
+	background-color: #2F77F1;
+	padding: 10px;
+	clear: both;
+	font-family: '돋움', Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	background:url(/data/201010/IJ12878312905648/footer_bg.gif) repeat-x bottom;
+	margin: 0 auto -120px; 
+}
+.footer, .push {
+	height: 100px; 
+	text-align:center;
+}
+            ul {
+
+list-style: none;
+
+margin: 0;
+
+padding : 0;
+
+overflow: hidden;
+
+background-color: #333;
+
+}
+
+li {
+
+float : left;
+
+}
+
+li a {
+
+display: block;
+
+color:white;
+
+text-align: center;
+
+padding: 14px 16px;
+
+text-decoration: none;
+
+}
+
+a:hover:not(.active) {
+
+background-color:orangered;
+
+}
+
+.active {
+
+background-color : #4CAF50;
+
+}
+            p{
+                float:center;
+                font-size:30px;
+                font-family:Times;
+            
+            }
+            #ifra{
+                position:relative; top:-250px; left:50px;
+            }
+            #xx{
+                position:relative; top:-20px; left:10px;
+
+            }
+            #xy{
+                position:relative; top:-785px; left:620px;
+            }
+            #xxx{
+                position:relative; top:-785px; left: 620px;
+            }
+            #xxxx{
+                position:relative; top:-575px; left:600px;
+            }
+           
+           

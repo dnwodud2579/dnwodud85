@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>재쓰의 음악저장소</title>
+        <meta charset="UTF-8">
+        <meta name="만든이" content="우재영">
+        
+            <style type="text/css">
+            #bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+#page-wrap { position: relative; width: 1000px; margin: 50px auto; padding: 100px; background: blanchedalmond; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+ul {
+
+list-style: none;
+
+margin: 0;
+
+padding : 0;
+
+overflow: hidden;
+
+background-color: #333;
+
+}
+
+li {
+
+float : left;
+
+}
+
+li a {
+
+display: block;
+
+color:white;
+
+text-align: center;
+
+padding: 14px 16px;
+
+text-decoration: none;
+
+}
+
+a:hover:not(.active) {
+
+background-color:orangered;
+
+}
+
+.active {
+
+background-color : #4CAF50;
+
+}
+            p{
+                float:center;
+                font-size:30px;
+                font-family:Times;
+            
+            }
+            #ifra{
+                position:relative; top:-250px; left:50px; font-family:Times;
+            }
+            #xx{
+                position:relative; top:0px; left:0px; font-family:Times;
+
+            }
+            #xy{
+                position:relative; top:-785px; left:620px; font-family:Times;
+            }
+            #xxx{
+                position:relative; top:-785px; left: 620px; font-family:Times;
+            }
+            #xxxx{
+                position:relative; top:-575px; left:600px; font-family:Times;
+            }
+            #xxxxxx{
+                position:relative; top:0px; left:0px; font-family:Times;
+            } 
+           
+           
+        </style>
+        
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>
+            $(function() {   
+            
+                var theWindow        = $(window),
+                    $bg              = $("#bg"),
+                    aspectRatio      = $bg.width() / $bg.height();
+                                            
+                function resizeBg() {
+                    
+                    if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+                        $bg
+                            .removeClass()
+                            .addClass('bgheight');
+                    } else {
+                        $bg
+                            .removeClass()
+                            .addClass('bgwidth');
+                    }
+                                
+                }
+                                            
+                theWindow.resize(function() {
+                    resizeBg();
+                }).trigger("resize");
+            
+            });
+        var num = window.localStorage.getItem('num') ?  
+parseInt(window.localStorage.getItem('num')) : 
+0; 
+window.onload = putString; 
+function add() { 
+ if(checkBool){
+
+   num += 1; 
+   window.localStorage.setItem('num', num); 
+   putString(); 
+   checkBool = !checkBool;
+ }
+} 
+function mis() { 
+    if(checkBool){
+   num -= 1; 
+   window.localStorage.setItem('num', num); 
+   putString(); 
+   checkBool = !checkBool;
+    }
+} 
+function putString() { 
+   document.getElementById('numberContainer').innerText = num; 
+   
+} 
+</script>
+    </head>
+
+<body>
+        <img src="qkxkd2.jpg" id="bg" alt="">
+	
+        <div id="page-wrap">
+    <header>
+            <div id="container">
+
+                    <div id="header">
+                        <span class="style1"><h1><img src="그림1.jpg" width="300" height="70">우재영의 음악저장소</h1>
+                <nav id="Menu">
+                        <ul>
+
+                                <li><a class="active" href="zz.html">Home</a></li>
+                    
+                                <li><a href="top10.html">TOP 10</a></li>
+                    
+                                <li><a href="zzz.html">장르별 음악</a></li>
+                    
+                                <li><a href="#">About</a></li>
+                    
+                         </ul>
+                         <script>
+                                (function() {
+                                  var cx = '009362380294703406188:vb46odhvytw';
+                                  var gcse = document.createElement('script');
+                                  gcse.type = 'text/javascript';
+                                  gcse.async = true;
+                                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                  var s = document.getElementsByTagName('script')[0];
+                                  s.parentNode.insertBefore(gcse, s);
+                                })();
+                              </script>
+                              <gcse:search></gcse:search>
+                         </span>
+                    </div>
+
+        
+                </nav>
+       <section>
+            <div id="content">
+                    
+           <article>
+               
+                <p>
+                    Today Best Song
+                </p>
+                <iframe id="xxxxxx" width="700" height="500" src="http://www.youtube.com/embed/r6NLMSUtQzg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>></iframe>
+                <P id="xx">1.UNDERTALE Soundtrack - 71 Undertale<br>작곡가 : Tobi Fox<br>나도 추천해요!</P>
+                <div id="numberContainer" style="text-align:center; ;" ></div> 
+<div style="text-align:center;" > 
+<button onclick="add()" >좋아요!</button> 
+<button onclick="mis()">싫어요!</button> 
+</div> 
+</article>
+<article>
+
+
+           </article>
+       </section>
+    </header>
+</body>
+</html>

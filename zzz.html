@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>재쓰의 음악저장소</title>
+        <meta charset="UTF-8">
+        <meta name="만든이" content="우재영">
+        <link rel="stylesheet" href="zz/src/index.css">
+       <style>
+ * { margin: 0; padding: 0; }
+
+#bg { position: fixed; top: 0; left: 0; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+#page-wrap { position: relative; width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+</style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script>
+            $(function() {   
+            
+                var theWindow        = $(window),
+                    $bg              = $("#bg"),
+                    aspectRatio      = $bg.width() / $bg.height();
+                                            
+                function resizeBg() {
+                    
+                    if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+                        $bg
+                            .removeClass()
+                            .addClass('bgheight');
+                    } else {
+                        $bg
+                            .removeClass()
+                            .addClass('bgwidth');
+                    }
+                                
+                }
+                                            
+                theWindow.resize(function() {
+                    resizeBg();
+                }).trigger("resize");
+            
+            });
+        var num = window.localStorage.getItem('num') ?  
+parseInt(window.localStorage.getItem('num')) : 
+0; 
+window.onload = putString; 
+function add() { 
+ if(checkBool){
+
+   num += 1; 
+   window.localStorage.setItem('num', num); 
+   putString(); 
+   checkBool = !checkBool;
+ }
+} 
+function mis() { 
+    if(checkBool){
+   num -= 1; 
+   window.localStorage.setItem('num', num); 
+   putString(); 
+   checkBool = !checkBool;
+    }
+} 
+function putString() { 
+   document.getElementById('numberContainer').innerText = num; 
+   
+} 
+</script>
+    </head>
+
+<body>
+        <img src="qkxkd2.jpg" id="bg" alt="">
+	
+        <div id="page-wrap">
+
+        </div>
+    <header>
+            
+            <div>
+
+                    
+                         </ul>
+                         <script>
+                                (function() {
+                                  var cx = '009362380294703406188:vb46odhvytw';
+                                  var gcse = document.createElement('script');
+                                  gcse.type = 'text/javascript';
+                                  gcse.async = true;
+                                  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                  var s = document.getElementsByTagName('script')[0];
+                                  s.parentNode.insertBefore(gcse, s);
+                                })();
+                              </script>
+                              <gcse:search></gcse:search>
+                         </span>
+                    </div>
+
+        
+                </nav>
+       <section>
+        <div class="page" id="page">
+            <div class="accordion" id="zA7n">
+                <ul class="accordion__ul">
+                    <li class="accordion__li"><img class="accordion__img" src="zz/image/01.jpg" alt="Image Alt" /></li>
+                    <li class="accordion__li"><img class="accordion__img" src="zz/image/02.jpg" alt="Image Alt" /></li>
+                    <li class="accordion__li"><img class="accordion__img" src="zz/image/03.jpg" alt="Image Alt" /></li>
+                    <li class="accordion__li"><img class="accordion__img" src="zz/image/04.jpg" alt="Image Alt" /></li>
+                    <li class="accordion__li"><img class="accordion__img" src="zz/image/05.jpg" alt="Image Alt" /></li>
+                    <li class="accordion__li"><img class="accordion__img" src="zz/image/06.jpg" alt="Image Alt" /></li>
+                    <li class="accordion__li"><img class="accordion__img" src="zz/image/07.jpg" alt="Image Alt" /></li>
+                    
+                </ul>
+            </div>
+    
+            
+    
+    
+        </div>
+    
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="zz/lib/limit.js"></script>
+        <script src="zz/src/zA7n.js"></script>
+        <script>
+            $(window).load(function () {
+                $('#zA7n').zA7n({});
+            });
+        </script>
+       </section>
+    </header>
+</body>
+</html>
